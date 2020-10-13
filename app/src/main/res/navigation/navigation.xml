@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/mainFragment"
+    tools:ignore="UnusedNavigation">
+
+    <fragment
+        android:id="@+id/startFragment"
+        android:name="com.example.game2048.StartFragment"
+        android:label="StartFragment"
+        tools:layout="@layout/fragment_start">
+        <action
+            android:id="@+id/action_startFragment_to_mainGame"
+            app:destination="@id/mainGame" />
+        <action
+            android:id="@+id/action_startFragment_to_boardFragment"
+            app:destination="@id/boardFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainGame"
+        android:name="com.example.game2048.MainGame"
+        android:label="fragment_main_game"
+        tools:layout="@layout/fragment_main_game" >
+        <action
+            android:id="@+id/action_mainGame_to_gameOverFragment"
+            app:destination="@id/gameOverFragment" />
+
+        <argument
+            app:argType="string"
+            android:name="userId" />
+
+        <argument
+            android:name="score"
+            app:argType="string" />
+        <argument
+            android:name="maxScore"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/boardFragment"
+        android:name="com.example.game2048.BoardFragment"
+        android:label="fragment_board"
+        tools:layout="@layout/fragment_board" />
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.example.game2048.RegisterFragment"
+        android:label="RegisterFragment"
+        tools:layout="@layout/fragment_register">
+        <action
+            android:id="@+id/action_registerFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <argument
+            app:argType="string"
+            android:name="userId" />
+        <argument
+            app:argType="string"
+            android:name="userPassword" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.game2048.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <argument
+            android:name="userId"
+            app:argType="string" />
+        <argument
+            android:name="userName"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_loginFragment_to_startFragment"
+            app:destination="@id/startFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.game2048.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_startFragment"
+            app:destination="@id/startFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_aboutFragment"
+            app:destination="@id/aboutFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_rulesFragment"
+            app:destination="@id/rulesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.example.game2048.AboutFragment"
+        android:label="fragment_about"
+        tools:layout="@layout/fragment_about" />
+    <fragment
+        android:id="@+id/rulesFragment"
+        android:name="com.example.game2048.rulesFragment"
+        android:label="fragment_rules"
+        tools:layout="@layout/fragment_rules" />
+    <fragment
+        android:id="@+id/gameOverFragment"
+        android:name="com.example.game2048.GameOverFragment"
+        android:label="fragment_game_over"
+        tools:layout="@layout/fragment_game_over" >
+        <action
+            android:id="@+id/action_gameOverFragment_to_mainGame"
+            app:destination="@id/mainGame" />
+        <argument
+            app:argType="string"
+            android:name="userId" />
+    </fragment>
+</navigation>

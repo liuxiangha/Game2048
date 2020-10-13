@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".BoardFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/flowers">
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:background="@color/cardview_light_background"
+                android:orientation="vertical"
+                tools:ignore="PrivateResource,UselessLeaf,UselessParent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/useTime"
+                    android:textColor="@android:color/black"
+                    android:textSize="35sp" />
+
+                <TextView
+                    android:id="@+id/boardUseTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="35sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="32dp"
+                android:background="@color/cardview_light_background"
+                android:orientation="vertical"
+                tools:ignore="PrivateResource,UselessLeaf,UselessParent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/cardview_light_background"
+                    android:gravity="center"
+                    android:text="@string/minUseTime"
+                    android:textColor="@android:color/black"
+                    android:textSize="35sp" />
+
+                <TextView
+                    android:id="@+id/boardMinUseTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="35sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <GridLayout
+            android:id="@+id/boardGrid"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="#000000"
+            android:columnCount="3"
+            android:rowCount="3"
+            android:weightSum="4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+            tools:ignore="UselessLeaf">
+
+            <TextView
+                android:id="@+id/boardOne"
+                android:layout_width="0.0dip"
+                android:layout_height="0.0dip"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@android:color/black"
+                android:textSize="50sp" />
+
+            <TextView
+                android:id="@+id/boardTwo"
+                android:layout_width="0.0dip"
+                android:layout_height="0.0dip"
+                android:layout_row="0"
+                android:layout_rowWeight="1"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@android:color/black"
+                android:textSize="50sp" />
+
+            <TextView
+                android:id="@+id/boardThree"
+                android:layout_width="0.0dip"
+                android:layout_height="0.0dip"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@android:color/black"
+                android:textSize="50sp" />
+
+            <TextView
+                android:id="@+id/boardFour"
+                android:layout_width="0.0dip"
+                android:layout_height="0.0dip"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@android:color/black"
+                android:textSize="50sp" />
+
+            <TextView
+                android:id="@+id/boardFive"
+                android:layout_width="0.0dip"
+                android:layout_height="0.0dip"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@android:color/black"
+                android:textSize="50sp" />
+
+            <TextView
+                android:id="@+id/boardSix"
+                android:layout_width="0.0dip"
+                android:layout_height="0.0dip"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@android:color/black"
+                android:textSize="50sp" />
+
+            <TextView
+                android:id="@+id/boardSeven"
+                android:layout_width="0.0dip"
+                android:layout_height="0.0dip"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@android:color/black"
+                android:textSize="50sp" />
+
+            <TextView
+                android:id="@+id/boardEight"
+                android:layout_width="0.0dip"
+                android:layout_height="0.0dip"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@android:color/black"
+                android:textSize="50sp" />
+
+            <TextView
+                android:id="@+id/boardNine"
+                android:layout_width="0.0dip"
+                android:layout_height="0.0dip"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@android:color/black"
+                android:textSize="50sp" />
+
+        </GridLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="16dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/boardGrid">
+
+            <Button
+                android:id="@+id/boardRobot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:text="@string/robot"
+                android:textSize="24sp"
+                tools:ignore="ButtonStyle" />
+
+            <Button
+                android:id="@+id/checkSolverButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:text="@string/check"
+                android:layout_marginStart="32dp"
+                android:textSize="24sp"
+                tools:ignore="ButtonStyle" />
+
+            <Button
+                android:id="@+id/resetNumsButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_marginStart="32dp"
+                android:text="@string/reset"
+                android:textSize="24sp"
+                tools:ignore="ButtonStyle" />
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application>
+        <activity android:name="com.example.game2048.AboutActivity"></activity>
+        <activity android:name="com.example.game2048.rules" />
+    </application>
+
+</manifest>

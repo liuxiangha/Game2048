@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">Game2048</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="_2048start">2048Start</string>
+    <string name="board">Board</string>
+    <string name="robot">Robot</string>
+    <string name="check">Check</string>
+    <string name="reset">Reset</string>
+    <string name="_2048">2048</string>
+    <string name="score">Score</string>
+    <string name="max_score">Max Score</string>
+    <string name="highest">Highest</string>
+    <string name="useTime">UseTime</string>
+    <string name="minUseTime">MinUseTime</string>
+    <string name="restart">restart</string>
+    <string name="_0">0</string>
+    <string name="send">Send</string>
+    <string name="userid">userId</string>
+    <string name="signin">SignIn</string>
+    <string name="tosign">toSign</string>
+    <string name="showall">ShowAll</string>
+    <string name="name">Name:</string>
+    <string name="username">UserName</string>
+    <string name="password">Password:</string>
+    <string name="man">Man</string>
+    <string name="woman">Woman</string>
+    <string name="none">None</string>
+    <string name="register">Register</string>
+    <string name="Register">Register</string>
+    <string name="login">Login</string>
+    <string name="just_only_play">just only play</string>
+    <string name="user_id">UserId:</string>
+    <string name="_123456">123456</string>
+    <string name="id">Id:</string>
+    <string name="copyRight">
+        Copyright@LiuXianghai, ZhaoYongfeng 2020-2021
+    </string>
+    <string name="about">\t\t\tThe App is 2048 game and board game, you can register and login to record your score, we will record your play record but no any player could find it, let\'s we start th game!
+    </string>
+    <string name="_2048game">2048Game</string>
+    <string name="rules">\t\t\tYou need to control all the blocks to move in the same direction. Two identical digital blocks collide and merge into their sum. After each operation, a 2 or 4 will be randomly generated. Finally, a \'2048\' block is won. .</string>
+    <string name="boardRules">\t\t\tIt is on a 3×3 grid plate, which is to randomly place 1 to 8 eight small wooden blocks, and the number around each space can be moved to a space. Players need to rearrange the small wooden blocks in the order of 12345678, and win the game with the least number of moves.</string>
+    <string name="boardgame">BoardGame</string>
+    <string name="rule">rules</string>
+    <string name="aboutItem">About</string>
+    <string name="todo">TODO</string>
+    <string name="Open">Open</string>
+    <string name="Close">Close</string>
+    <string name="score_1">Score</string>
+    <string name="maxscore">MaxScore</string>
+</resources>
